@@ -11,8 +11,8 @@ const useQuery = () => {
     } else {
       params.delete(key);
     }
-  
-    navigate(`${pathname}?${params.toString()}`);
+    const queryString = params.toString();
+    navigate(`${pathname}${queryString ? `?${queryString}` : ''}`, { replace: true });
   };
 
   const getQueryParam = (key: string) => {
