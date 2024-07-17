@@ -1,13 +1,13 @@
-import { Container, Typography } from "@mui/material";
+import { Route, Routes } from "react-router-dom";
 import UserList from "./components/UserList";
+import { Container } from "@mui/material";
 
 const App: React.FC = () => {
   return (
-    <Container>
-      <Typography variant="h4" component="h1" gutterBottom>
-        Users List
-      </Typography>
-      <UserList />
+		 <Container>
+      <Routes>
+        <Route path="/" element={<UserList />} />
+      </Routes>
     </Container>
   );
 };
