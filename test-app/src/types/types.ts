@@ -16,3 +16,6 @@ export interface User {
   name: Name;
   address: Address;
 }
+export interface UserCardProps {
+  user: User;
+}

@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Card,
   CardContent,
@@ -7,11 +6,8 @@ import {
   Avatar,
   Stack,
 } from "@mui/material";
-import { User } from "./types";
+import { UserCardProps } from "../types/types";
 
-interface UserCardProps {
-  user: User;
-}
 
 const UserCard: React.FC<UserCardProps> = ({ user }) => {
   return (
